@@ -5,7 +5,15 @@
   --container-color: #111827;
 }
 body {
-  background-color: var(--primary-color);
+  background: radial-gradient(
+      92.72% 100% at 50% 0%,
+      rgba(215, 215, 215, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    radial-gradient(92.72% 100% at 50% 0%, #ff0000 0%, #000000 100%),
+    radial-gradient(109.21% 213.32% at 100% 0%, #ff4d00 0%, #00c2ff 100%),
+    linear-gradient(127.43deg, #d50000 0%, #7856ff 100%);
+  background-blend-mode: overlay, difference, difference, exclusion, normal;
   font-family: "Gotu", sans-serif;
   color: var(--secondary-color);
 }
@@ -25,7 +33,6 @@ body {
   display: inline-flex;
   width: 100%;
   color: var(--primary-color);
-  background-color: var(--container-color);
 }
 #input-container {
   width: 50%;
